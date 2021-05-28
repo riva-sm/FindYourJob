@@ -16,6 +16,16 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+.logo-link {
+  width: 132px;
+}
+.hero-image {
+  width: 100%;
+}
+
 .header {
   background-color: #f2f3f6;
 }
@@ -100,13 +110,13 @@ a {
 }
 
 .button-icon {
-  margin-right: 10px;
   vertical-align: middle;
 }
 .button-text {
   line-height: 19px;
   color: #ffffff;
   vertical-align: middle;
+  margin-left: 10px;
 }
 
 .tags-group {
@@ -262,4 +272,104 @@ section {
   font-size: 16px;
   line-height: 19px;
   color: #111238;
+}
+
+@media (max-width: 1200px) {
+  .offer-salary {
+    margin: 0 30px;
+  }
+  .more {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .more {
+    margin: 0 auto;
+  }
+  .tags-label {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .offer-title {
+    text-align: center;
+    margin-left: 0;
+  }
+  .tag {
+    margin: 0 5px;
+  }
+
+  .menu-item:not(:last-child) {
+    margin-right: 0;
+  }
+  .button-link {
+    margin-right: 0;
+  }
+
+  .logo-link {
+    width: 132px;
+    display: block;
+    margin: 0;
+  }
+  .navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+  }
+
+  .isopen {
+    transform: translateX(0);
+  }
+  .close {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    text-align: right;
+    padding: 20px;
+    color: #1a75e8;
+  }
+  .logo-mobile {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    text-align: center;
+    padding: 50px 0 54px 0;
+  }
+  .card {
+    max-width: 250px;
+    margin: auto;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .hero-text {
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+  .subscribe-title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  section {
+    padding: 50px 0;
+  }
 }
